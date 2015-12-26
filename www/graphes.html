@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<META HTTP-EQUIV="refresh" CONTENT="20" CHARSET=utf-8>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+		<style>
+			p { font-family: "Cantarell", monospace, serif; }
+		</style>
+		<title>Projet SyR</title>
+	</head>
+	<body>
+		<p>Team 0</p>
+		<div id="graph_0"></div>
+		<p>Team 1</p>
+		<div id="graph_1"></div>
+		<p>Team 2</p>
+		<div id="graph_2"></div>
+		<p>Team 3</p>
+		<div id="graph_3"></div>
+		<p>Team 4</p>
+		<div id="graph_4"></div>
+		<p>Team 5</p>
+		<div id="graph_5"></div>
+		<p>Team 6</p>
+		<div id="graph_6"></div>
+		<p>Team 7</p>
+		<div id="graph_7"></div>
+		<p>Team 8</p>
+		<div id="graph_8"></div>
+		<p>Team 9</p>
+		<div id="graph_9"></div>
+		<p>Team 10</p>
+		<div id="graph_10"></div>
+		<script>
+			var config = {
+				xkey: 'y',
+				ykeys: ['a', 'b', 'c', 't'],
+				labels: ['X', 'Y', 'Z', 'Temp'],
+				pointFillColors:['#ffffff'],
+				pointStrokeColors: ['black'],
+				hideHover: true
+			};
+			config.element = 'graph_0';
+			config.data = [$team_0];
+			Morris.Line(config);
+			config.element = 'graph_1';
+			config.data = [$team_1];
+			Morris.Line(config);
+			config.element = 'graph_2';
+			config.data = [$team_2];
+			Morris.Line(config);
+			config.element = 'graph_3';
+			config.data = [$team_3];
+			Morris.Line(config);
+			config.element = 'graph_4';
+			config.data = [$team_4];
+			Morris.Line(config);
+			config.element = 'graph_5';
+			config.data = [$team_5];
+			Morris.Line(config);
+			config.element = 'graph_6';
+			config.data = [$team_6];
+			Morris.Line(config);
+			config.element = 'graph_7';
+			config.data = [$team_7];
+			Morris.Line(config);
+			config.element = 'graph_8';
+			config.data = [$team_8];
+			Morris.Line(config);
+			config.element = 'graph_9';
+			config.data = [$team_9];
+			Morris.Line(config);
+			config.element = 'graph_10';
+			config.data = [$team_0];
+			Morris.Line(config);
+		</script>
+	</body>
+</html>
